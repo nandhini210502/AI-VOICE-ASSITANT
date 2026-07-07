@@ -45,7 +45,4 @@ export const useChat = () => {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
           },
-          body: JSON.stringify({ content, preferredLang: voiceSettings?.preferredLang }),
-        })
-
-        if (!response.ok) throw new Error('Failed to send message')
+          body: JSON.stringify({ content, preferredLang:
